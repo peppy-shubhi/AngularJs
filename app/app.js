@@ -14,7 +14,7 @@ myApp.controller('myController',['$scope',function($scope){
     },
     {name:"yash",
         rate:"17",
-        available:false
+        available:true
     },
     ];
 
