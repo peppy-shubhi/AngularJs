@@ -2,7 +2,17 @@ var myApp=angular.module('myApp',[]);
 
 
 myApp.controller('myController',['$scope',function($scope){
-    $scope.message="hello people";
-    $scope.arr=['shubhi','nidhi','yash'];
+    
+    $scope.arr=[
+        {name:"shubhi",
+        rate:"20",
+    },
+    {name:"nidhi",
+        rate:"25",
+    },
+    {name:"yash",
+        rate:"17",
+    },
+    ];
 
 }]);
