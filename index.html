@@ -16,7 +16,7 @@
         <button ng-click="order='rate'">Order by rate</button>
         <ul>
           <li ng-repeat= "a in arr |orderBy:order|filter:search" ng-show="a.available">{{a.name}}-{{a.rate|currency:$}}
-
+              <div class="remove" ng-click="remove_entry(a)"> x</div>
           </li>
 
         </ul>

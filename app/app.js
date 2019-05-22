@@ -2,6 +2,10 @@ var myApp=angular.module('myApp',[]);
 
 
 myApp.controller('myController',['$scope',function($scope){
+    $scope.remove_entry=function(a){
+        var removed=$scope.arr.indexOf(a);
+        $scope.arr.splice(removed,1);
+    }
     
     $scope.arr=[
         {name:"shubhi",
