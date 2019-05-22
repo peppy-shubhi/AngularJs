@@ -20,6 +20,11 @@
           </li>
 
         </ul>
+        <form ng-submit="add_entry()">
+          <input type="text" placeholder="write your name" ng-model="add.name">
+          <input type="number" placeholder="write your rate" ng-model="add.rate">
+          <input type="submit" placeholder="submit" >
+        </form>
 
     </div>
   </div>

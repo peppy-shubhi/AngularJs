@@ -6,6 +6,16 @@ myApp.controller('myController',['$scope',function($scope){
         var removed=$scope.arr.indexOf(a);
         $scope.arr.splice(removed,1);
     }
+    $scope.add_entry=function()
+    {
+        $scope.arr.push({
+            name:$scope.add.name,
+            rate:$scope.add.rate,
+            available:$scope.available=true
+        })
+        $scope.add.name="";
+        $scope.add.rate="";
+    }
     
     $scope.arr=[
         {name:"shubhi",
