@@ -1,10 +1,8 @@
 var myApp=angular.module('myApp',[]);
 
-myApp.config(function(){
 
-});
+myApp.controller('myController',['$scope',function($scope){
+    $scope.message="hello people";
+    $scope.arr=['shubhi','nidhi','yash'];
 
-myApp.run(function(){
-
-});
-myApp.controller
+}]);

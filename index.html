@@ -4,14 +4,19 @@
     <title>TheNetNinja Angular Playlist</title>
     <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
     <script src="app/lib/angular.min.js"></script>
+    <script src="app/app.js"></script>
   </head>
-  <body ng-init="names=['shubhi','nidhi','yash']">
-    <input type="text" placeholder="Enter your color" ng-model="color1">
-    <p style="color: {{color1}}">Your color is this.</p>
-    <ul>
-      <li ng-repeat="name in names">{{name}}</li>
-    </ul>
+  <body>
+    <div ng-controller="myController">
+        <h1>{{message}}</h1>
+        <ul>
+          <li ng-repeat= "a in arr">{{a}}</li>
+
+        </ul>
+
+    </div>
     
 
+    
   </body>
 </html>
