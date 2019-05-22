@@ -5,10 +5,13 @@
     <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
     <script src="app/lib/angular.min.js"></script>
   </head>
-  <body>
-    <input type="text" placeholder="Enter your name" ng-model="name">
-    <p>Your name is:{{name}}</p>
-    <p np-bind="name"></p>
+  <body ng-init="names=['shubhi','nidhi','yash']">
+    <input type="text" placeholder="Enter your color" ng-model="color1">
+    <p style="color: {{color1}}">Your color is this.</p>
+    <ul>
+      <li ng-repeat="name in names">{{name}}</li>
+    </ul>
+    
 
   </body>
 </html>
